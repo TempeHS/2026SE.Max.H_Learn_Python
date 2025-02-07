@@ -2,7 +2,7 @@
 name = input('Whats your name? ').strip().title()
 
 # Split user's name into first name and last name
-first, last = name.split(" ")
+first, last = name.strip(" ")
 
 # Say hello with their given name
 print(f"hello, {name}")
