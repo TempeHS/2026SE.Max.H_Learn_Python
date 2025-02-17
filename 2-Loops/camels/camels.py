@@ -3,7 +3,10 @@ snake_case = ""
 # finds all capitals in a sentence
 for chr in camel_case:
     if chr.isupper():
-        snake_case = chr + "_" chr.lower()
+        snake_case = "_" + chr.lower()
+    else:
+        snake_case += chr
         
 
-print(camel_case)
+print(snake_case)
+
