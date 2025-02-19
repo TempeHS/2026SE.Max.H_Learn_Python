@@ -1,11 +1,11 @@
 camel_case = input("Give me camels! ")
 snake_case = ""
 # finds all capitals in a sentence
-for chr in camel_case:
-    if chr.isupper():
-        snake_case = "_" + chr.lower()
+for char in camel_case:
+    if char.isupper():
+        snake_case += "_" + char.lower()
     else:
-        snake_case += chr
+        snake_case += char
         
 
 print(snake_case)
