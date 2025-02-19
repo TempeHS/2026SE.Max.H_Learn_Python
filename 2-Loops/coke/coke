@@ -1,0 +1,22 @@
+def incorrect(coinage):
+    if coinage in coin:
+        return coinage
+    else:
+        money = coinage - coinage
+        return print("Invalid Coin")
+    
+coin = [25, 10, 5]
+val = 50
+money = 0
+
+while val > 0:
+    coinage = int(input("coinage: "))
+    incorrect(coinage)
+    val = val - money
+    if val < 0:
+        print(f"change = {val * -1}")
+        print("here's yur coke")
+    elif val == 0:
+        print("here's yur coke")
+    else:
+        print(f"Amount Due = {val}")
