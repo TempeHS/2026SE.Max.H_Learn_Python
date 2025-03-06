@@ -1,27 +1,29 @@
 def main():
-		global plate
-		plate = input("Plate: ")
-		if is_valid(plate):
-			print("Valid")
-		else:
-			print("Invalid")
+	global plate
+	plate = input("Plate: ")
+	if is_valid(plate):
+		print("Valid")
+	else:
+		print("Invalid")
 
 
-def is_valid(s):
+def is_valid(char):
 
-    chr = (len(plate))
+    char = (len(plate))
 
-    if chr < 2 or chr > 6:
+    if char < 2 or char > 6:
         print("length")
         return False
 	
-    for x in range(2):
-        if x is str:
+    for chr in range(2):
+        if chr is str:
             print("start")
             return False
 		
-    for x in range(2, chr):
-        if x is chr:
+    for chr in range(char, 2):
+        if chr is str and chr-1 is int:
+            print("middle")
+            return False
             
             
 	
